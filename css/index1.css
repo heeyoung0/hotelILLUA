@@ -1,0 +1,411 @@
+@charset "utf-8";
+@import url('font.css');
+html {font-size: 0.625rem; }
+body {font: 1.6rem 'Hahmlet', serif; scroll-behavior:smooth; max-width: 640px;}
+
+@media screen and (max-width: 640px){
+    #wrap {max-width: 640px; overflow: hidden;}
+    #top-video {width: 100%;}
+    .menu {
+        max-width: 640px;
+        padding-top: 1.875em;
+    }
+    .menu .logo {
+        top: 1.563em;
+        left: 1.250em;
+    }
+    .logo h2 a svg{
+        width: 3.125em;
+        height: 3.125em;
+    }
+    .menu-container {display: none;}
+    .header-right {top: 3.125em; right: 3.125em;}
+    .header-right .lang {display: none;}
+    .header-right .reserv a {
+        border: none; 
+        padding: 0; 
+        font-size: 1.1rem;
+    }
+    .mobile-menu-btn {
+        display: block; 
+        position: absolute; 
+        top: 3.438em; right: 2.500em;
+    }
+    .mobile-menu-btn span {
+        display: inline-block; 
+        width: 1.250em; height: 1.250em; 
+        background: url(../img/menu-ico.png) no-repeat center/cover; 
+        filter :brightness(0) invert(1);
+    }
+    .middle-area {
+        top: 35%;
+    }
+    .middle-date {
+        position: absolute; 
+        width: 19.375em; height: 2.5em;
+    }
+    .middle-date h1 {font-size: 2.8rem;}
+    .middle-date > a {
+        display: inline-block;
+        font-size: 1.2rem;
+        border: 1px solid #fff;
+        padding: 1.083em 2.083em;
+        box-sizing: border-box;
+    }
+    .date-container {display: none;}
+    #stay {
+        max-width: 640px;
+        margin: 4.375em 2.5em;
+    }
+    .top-text{
+        position: relative;
+    }
+    .top-text h1 {
+        font-size: 2.3rem;
+        padding-bottom: 0;
+    }
+    .top-text p {
+        display: block;
+        font-size: 1.4rem;
+        margin-bottom: 1.429em;
+    }
+    .top-text a .viewMore {display: none;}
+    .top-text a .mobile-btn {
+        position: absolute;
+        display: inline-block;
+        width: 0.938em; height: 0.938em;
+        top: 30%; right: 0;
+    }
+    .top-text a .mobile-btn img {
+        width: 100%;
+        filter: opacity(0.5) drop-shadow(0 0 0 #888888);
+    }
+    .main-area > div {
+        max-width: 11.25em;
+    }
+    .main-area div figure {
+        max-width: 11.250em;
+        height: 8.75em;
+        margin-bottom: 0.813em;
+    }
+    .main-area div h2 {
+        font-size: 1.8rem;
+        margin-bottom: 0.556em;
+    }
+    .main-area .happy-day h2 {
+        letter-spacing: -1px;
+    }
+    .main-area div .sub-text {
+        font-size: 1.3rem;
+        margin-bottom: 0;
+        padding-bottom: 1.154em;
+        border: none;
+    }
+    .main-area .rest .sub-text, .main-area .bread .sub-text {
+        width: 11.923em;
+    }
+    .main-area div .reserv-day {
+        margin-right: 0;
+    }
+    .main-area > div .reserv-area {
+        border-top: 1px solid #dfdfdf;
+        padding-top: 1.154em;
+    }
+    .main-area > div .reserv-day {
+        line-height: 1;
+        font-size: 1.3rem;
+        margin-right: 0.769em;
+    }
+    .main-area > div .day {
+        font-size: 1.3rem;
+        letter-spacing: -0.7px;
+    }
+    #swiper-area {
+        background: rgba(140, 140, 140, 0.1);
+        height: 78vh;
+    }
+    .mainSwiper {
+        max-width: 40em;
+        width: 40em;
+        margin-top: 10.625em;
+    }
+    .mainSwiper .swiper-wrapper {
+        width: 100%;
+        height: 25em;
+    }
+    .mainSwiper .swiper-slide img {
+        width: 100%;
+        height: 100%
+    }
+    .info-text {
+        position: absolute;
+        top: 0; left: 0;
+        height: 7.5em;
+        text-align: left;
+        max-width: 640px;
+        padding: 4.375em 2.5em 0;
+    }
+    .info-text h1 {
+        font-size: 2.4rem;
+        margin-bottom: 0.417em;
+        line-height: 1;
+    }
+    .info-text .info-sub-text {
+        font-size: 1.4rem;
+    }
+    .info-text .room-text {
+        display: none;
+    }
+    .info-text .view {
+        top: 30%; right: 2.5em;
+        bottom: 0;
+    }
+    .info-text .viewMore {display: none;}
+    .info-text .view a .mobile-btn {
+        position: absolute;
+        display: inline-block;
+        width: 0.938em; height: 0.938em;
+        top: 60%; right: 0;
+    }
+    .info-text .view a .mobile-btn img {
+        width: 100%;
+        filter: opacity(0.5) drop-shadow(0 0 0 #888888);
+    }
+    #enjoy-area {
+        max-width: 40em;
+        margin: 4.375em 2.5em 0;
+        padding-bottom: 4.375em;
+        overflow: hidden;
+    }
+    .enjoy-text {
+        padding-top: 0;
+    }
+    .enjoy-text h1 {
+        font-size: 2.4rem;
+    }
+    .enjoy-text .enjoy-sub-text .mobile-hide{display: none;}
+    .enjoy-text .enjoy-sub-text .sub-text {
+        display: inline-block;
+        color: #444;
+    }
+    .enjoy-text .view {
+        top: 30%; right: 12px;
+    }
+    .enjoy-text .view .viewMore {display: none;}
+    .enjoy-text .view a .mobile-btn {
+        position: absolute;
+        display: inline-block;
+        width: 15px; height: 15px;
+    }
+    .enjoy-text .view a .mobile-btn img {
+        width: 100%;
+        filter: opacity(0.5) drop-shadow(0 0 0 #888888);
+    }
+    .bottomSwiper .swiper-wrapper {
+        width: 100%;
+    }
+    .bottomSwiper .swiper-slide img {
+        width: 100%;
+        height: 100%;
+    }
+    .bottomSwiper .swiper-slide a {
+        font-size: 2.5rem;
+    }
+    /* bottom-swiper */
+    footer:before {
+        width: 86%;
+        left: 2.500em; top: 55%;
+    }
+    .footer-video {
+        width: 100%;
+        height: 22.500em;
+    }
+    .footer-video video {
+        width: 100%;
+        height: 100%;
+    }
+    .footer-top .footer-logo {
+        position: absolute;
+        top: 50px; left: 40px;
+    }
+    .footer-logo h2 a svg{
+        width: 70px; height: 70px;
+    }
+    .footer-sns {
+        top: 4.375em; right: 2.500em;
+    }
+    .footer-sns a span:first-child img {
+        width: 1.250em; height: 1.250em;
+    }
+    .footer-sns a span:last-child img {
+        width: 2.5em; height: 2.5em;
+    }
+    .footer-info {
+        width: 100%;
+        top: 45%; right: -40px;
+    }
+    .footer-info p a {
+        font-size: 1.2rem;
+        margin-right: 1.667em;
+    }
+    .footer-info p a:last-child {
+        margin-right: 0;
+    }
+    .copy{
+        color: rgba(255,255,255,0.3);
+        bottom: 5%; left: 1.818em;
+        font-size: 1.1rem;
+    }
+    .address {
+        width: 80%;
+        color: rgba(255,255,255,0.3);
+        left: 3.636em; bottom: 30%;
+        font-size: 1.1rem;
+    }
+    .address p span {
+        margin: 0 0.455em;
+        letter-spacing: -0.6px;
+    }
+    .address p span:first-child, .address p span:last-child {margin-left: 0;}
+
+    /* 아래부터는 모바일 추가 메뉴 */
+    #reactive-wrap {
+        position: relative;
+    }
+    #reactive-menu {
+        display: block;
+        position: absolute;
+        background: #fff;
+        width: 65%;
+        height: 100vh;
+        color: #111;
+        z-index: 10;
+        top: 0; right: -420px;
+        overflow: scroll;
+    }
+    
+    .reactive-bg {
+        display: none;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        left: 0; top: 0;
+        background: rgba(0,0,0,0.5);
+        z-index: 2;
+    }
+    .top-ico {
+        position: relative;
+        width: 100%;
+        background: #111;
+        padding: 15px 40px;
+        box-sizing: border-box;
+    }
+    .top-ico .home-ico {
+        display: inline-block;
+        background: url(../img/home-ico.png) no-repeat center/cover;
+        width: 20px; height: 20px;
+        vertical-align: -3px;
+    }
+    .top-ico .close-ico {
+        position: absolute;
+        background: url(../img/mobile-close.png) no-repeat center/cover;
+        width: 17px; height: 17px;
+        top: 50%; right: 40px;
+        transform: translateY(-50%);
+    }
+    #menu-area {
+        width: 100%;
+        /* height: 86.5vh; */
+        height: 100%;
+        top: 0;
+    }
+    #menu-area .menu-contents {
+        position: relative;
+        box-sizing: border-box;
+        top: 0; right: 0;
+    }
+    .menu-contents li span {
+        position: relative;
+        display: block;
+        font-size: 1.7rem;
+        /* color: #ca791d; */
+        font-weight: 500;
+        border-bottom: 1px solid #e5e5e5;
+        padding: 20px 40px 20px;
+        box-sizing: border-box;
+    }
+    .menu-contents li span:after {
+        position: absolute;
+        top: 25px;right: 43px;
+        display: inline-block;
+        content: '';
+        width: 8px; height: 8px; 
+        border-top: 2px solid #333;
+        border-right: 2px solid #333; 
+        transform: rotate(135deg);
+        transition: all 0.3s;
+    }
+    .menu-contents li .active:after {
+        transform: rotate(315deg);
+        border-color: #ad7b61;
+    }
+    .reactive-hide {
+        padding: 0 40px 17px;
+        box-sizing: border-box;
+        display: none;
+        height: 100%;
+        background: rgba(183, 183, 183, 0.2);
+    }
+    .reactive-hide li a {
+        display: block;
+        font-size: 1.2rem;
+        color: #666;
+    }
+    .reactive-hide li a:not(.bold) {
+        padding: 5px 0;
+    }
+    .reactive-hide li .bold {
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: #111;
+        padding: 20px 0 7px 0;
+    }
+    .reactive-info-area {
+        padding: 10px 0 10px 0;
+        box-sizing: border-box;
+        background: #f5f5f5;
+        text-align: center;
+    }
+    .reactive-info-area a {
+        display: inline-block;
+        font-size: 1.1rem;
+        width: 32.5%;
+        font-weight: 500;
+    }
+    .reactive-info-area .border {
+        position: relative;
+    }
+    .reactive-info-area .border:after {
+        position: absolute;
+        content: '';
+        width: 1px; height: 50%;
+        background: #ccc;
+        top: 40%; right: 0;
+    }
+    .reactive-info-area .call-ico{
+        background: url(../img/telephone-ico.png) no-repeat center/contain;
+        display: inline-block;
+        width: 11px; height: 11px;
+        margin-left: 5px;
+        vertical-align: -1px;
+    }
+    .reactive-info-area .lang-ico {
+        background: url(../img/reactive-lang-ico.png) no-repeat center/contain;
+        display: inline-block;
+        width: 12px; height: 12px;
+        margin-left: 5px;
+        vertical-align: -2px;
+    }
+
+
+}

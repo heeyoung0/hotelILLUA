@@ -1,0 +1,151 @@
+@charset "utf-8";
+@import url('font.css');
+html {font-size: 0.625rem; }
+body {font: 1.6rem 'Hahmlet', serif; max-width: 1903px; scroll-behavior:smooth; color: #111;}
+
+#rooms {
+    /* height: 4500px; */
+}
+.rooms-tap-menu {
+    height: 4700px;
+}
+.rooms-title {
+    max-width: 96.875em;
+    margin: 6.250em auto 3.750em;
+}
+.rooms-title h1 {
+    font-size: 4rem;
+    font-weight: 600;
+}
+.rooms-title p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #333;
+    margin-top: 0.278em;
+}
+/* rooms-title */
+.rooms-menu {
+    background: #f3f3f3bb;
+    padding: 2.813em 0;
+}
+.rooms-menu p {
+    max-width: 96.875em;
+    margin: 0 auto;
+}
+.rooms-menu p .tap {
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #999999c5;
+    transition: all 0.3s;
+}
+.rooms-menu p .tap:hover {
+    color: #111;
+}
+.rooms-menu p .tap.all {
+    color: #111;
+}
+.rooms-menu p span {
+    font-weight: 300;
+    padding: 0 1.923em;
+    box-sizing: border-box;
+    font-size: 1.3rem;
+    vertical-align: 0.154em;
+    color: #999999c5;
+}
+/* rooms-menu */
+.rooms-img {
+    display: flex;
+    max-width: 96.875em;
+    margin: 6.250em auto 3.750em;
+    height: 100vh;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.swiper-text {
+    max-width: 96.875em;
+}
+.mainSwiper {
+    width: 750px;
+}
+.mainSwiper.all1 {
+    /* margin-right: 10px; */
+}
+.mainSwiper .swiper-slide img {
+    transition: ease-in-out 0.3s;
+}
+.mainSwiper .swiper-slide img:hover{
+    transform: scale(1.05);
+}
+.swiper-button-next, .swiper-button-prev{
+    color: rgba(255,255,255,0.7) !important;
+    padding: 0 1.875em;
+    box-sizing: border-box;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 3.5rem !important;
+    font-weight: 300 !important;
+}
+.all2 .swiper-button-prev.all2btn, .swiper-button-next.all2btn {
+    top: 217px;
+}
+.top-text {
+    width: 750px;
+    position: relative;
+    padding: 1.875em 0;
+    border-bottom: 1px solid #999999c5;
+}
+.top-text p {
+    font-size: 1.4rem;
+    color: #777;
+}
+.top-text h2 {
+    display: inline-block;
+    font-size: 3.2rem;
+    font-weight: 500;
+}
+.top-text a {
+    position: absolute;
+    right: 1.786em; bottom: 33px;
+    font-size: 1.4rem;
+    color: #777;
+    transition: 0.3s;
+}
+.top-text a:hover {
+    color: #000;
+}
+.top-text a:hover a:after {
+    border-color: #000;
+}
+.top-text a:after {
+    position: absolute;
+    right: -10px; 
+    top: 8px; 
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-top: 1px solid #777; 
+    border-right: 1px solid #777;
+    transform: rotate(45deg);
+    transition: 0.3s;
+}
+.room-info {
+    padding: 1.875em 0;
+    height: 100px;
+}
+.room-info .room-info-text {
+    width: 400px;
+    height: auto;
+}
+.room-info .room-info-text li {
+    float: left;
+    width: calc(100%/2);
+    line-height: 2;
+}
+.room-info-text li strong,span {
+    display: inline-block;
+    font-size: 1.7rem;
+}
+.room-info-text li strong {
+    font-weight: 600;
+    width: 85px;
+}

@@ -1,0 +1,791 @@
+@charset "utf-8";
+@import url('font.css');
+html {font-size: 0.625rem; }
+body {font: 1.6rem 'Hahmlet', serif; max-width: 1903px; scroll-behavior:smooth;}
+
+body::-webkit-scrollbar {
+    width: 15px;  /* 스크롤바의 너비 */
+}
+
+body::-webkit-scrollbar-thumb {
+    height: 30%; /* 스크롤바의 길이 */
+    background: #fccd90; /* 스크롤바의 색상 */
+    
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgba(33, 122, 244, .1);  /*스크롤바 뒷 배경 색상*/
+}
+/* @media screen and (max-aspect-ratio: 3/2) {
+    #background_video {
+        width: auto;
+        height: 100vh;
+    }
+} */
+#top-video {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    color: #fff
+}
+.top-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0; top: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.4);
+    opacity: 1;
+    z-index: 0;
+}
+.back-video video{
+    display: block;
+}
+video#bgvid {
+    position: absolute; right: 0; bottom: 0;
+    min-width: 100%; min-height: 100%;
+    width: auto; height: auto; z-index: -100;
+    background: url(../img/back-vid-img.jpg) no-repeat;
+    background-size: contain;
+}
+header {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+.menu {
+    position: relative;
+    max-width: 1783px;
+    margin: 0 auto;
+    padding: 5.0em 0 3.125em 0;
+    box-sizing: border-box;
+    text-align: center;
+    z-index: 1;
+}
+.menu .logo {
+    position: absolute;
+    width: 7.813em;
+    top: 60px;
+}
+.menu .logo h2 a svg {
+    fill: white;
+}
+.menu-container {
+    width: 100%;
+}
+.menu {
+    /* height: 0px; */
+}
+/* .menu:hover {
+    width: 100%;
+    max-height: 50vh;
+    background: #fff;
+} */
+.menu-container .header-menu {
+    display: inline-block;
+    text-align: center;
+    /* height: 28vh; */
+    height: auto;
+    position: relative; 
+}
+.menu-container .header-menu:hover {
+    color: #111;
+}
+.menu-container .header-menu .depth1 {
+    float: left;
+    width: 10.000em;
+    margin-right: 0.938em;
+}
+.menu-container .header-menu .depth1 > a {
+    position: relative;
+    font-weight: 500;
+    display: block;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+}
+.menu-container .header-menu .depth1 > a:hover {
+    color: #e09f54c0;
+}
+.mobile-menu-btn {display: none;}
+.depth1 > a::before {
+    position: absolute;
+    content: '';
+    background: transparent;
+    border-radius: 50%;
+    width: 7px; height: 7px;
+    left: 50%; top: -20px;
+    transform: translateX(-50%);
+    /* display: none; */
+    transition: all 0.3s;
+}
+.depth1:hover a:before {
+    display: block;
+    top: -5px;
+    background: #e09f54c0;
+}
+.header-right {
+    position: absolute;
+    display: inline-block;
+    width: 20%;
+    right: 0; top: 78px;
+}
+.header-right .reserv {
+    display: inline-block;
+}
+.depth2 {
+    display: none;
+    color: #111;
+}
+.hide-menu {
+    position: absolute;
+    text-align: left;
+    width: 1000px;
+    left: 45px; /* top: 70px; */
+}
+.hide-menu li {
+    float: left;
+    width: 240px;
+    line-height: 1.7;
+}
+.hide-menu-depth li{
+    display: block;
+    z-index: 10;
+}
+.hide-menu-depth li a {
+    color: #9b9b9b;
+}
+.gnb_bg{
+    position: absolute;
+    background: #fff;
+    top: -450px; left: 0;
+    width: 100%; height: 45vh;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    opacity: 0;
+}
+.header-right .lang {
+    margin-right: 2.5em
+}
+.header-right .lang .lang-text {
+    vertical-align: 1px;
+}
+.header-right .lang span {
+    font-size: 1.4rem;
+}
+.header-right .reserv a{
+    border: 1px solid #fff;
+    padding: 0.625em 1.250em;
+    box-sizing: border-box;
+}
+.middle-date > a {display: none;}
+/* header */
+.middle-area {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+}
+.middle-date {
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 2.5em;
+    text-align: center;
+    height: 250px;
+}
+.middle-date h1 {
+    font-size: 4.5rem;
+    margin-bottom: 1em;
+}
+.date-container {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+.date-container .check{
+    border-right: 1px solid #fff;
+    height: 70px;
+    /* padding: 0 3.125em; */
+    box-sizing: border-box;
+}
+.date-container .checkOut  {
+    margin-left: 3.125em;
+}
+.date-container .check p{
+    text-align: left;
+    margin-bottom: 0.938em;
+}
+.date-container input {
+    display: block;
+}
+/* datepicker */
+.ui-widget.ui-widget-content{
+    border: none !important;
+    padding: 0;
+    font-family: 'Hahmlet', serif;
+}
+.ui-datepicker .ui-datepicker-header {
+    background: #fff;
+    border: 0;
+    border-radius: 0;
+}
+.ui-widget-header .ui-icon {
+    background: none;
+}
+.ui-datepicker-prev{
+    /* 이전 화살표 */
+    text-align:center;
+  }
+  .ui-datepicker .ui-datepicker-prev span {
+    background: url(../img/left-arrow.png) no-repeat center/cover;
+    width: 10px; height: 10px;
+    top: 19px !important;
+  }
+  .ui-datepicker-next{
+    /* 다음 화살표 */
+    text-align:center;
+  }
+  .ui-datepicker .ui-datepicker-next span {
+    background: url(../img/right-arrow.png) no-repeat center/cover;
+    width: 10px; height: 10px;
+    top: 20px !important;
+  }
+  .ui-datepicker .ui-datepicker-title{
+    /* 년월 텍스트 묶음 */
+    color: #111;
+  }
+  .ui-datepicker .ui-datepicker-title .ui-datepicker-year{
+    /* 년도 숫자만 */
+    color: #111;
+  }
+  .ui-datepicker .ui-datepicker-title .ui-datepicker-month{
+    /* *월 */
+    color: #111
+  }
+  .ui-datepicker th{
+    /* 요일 영역 */
+    background : #fff;
+  }
+  .ui-datepicker th span{
+    /* 요일 텍스트 */
+    font-size:1.5rem;
+    color: #111;
+  }
+  .ui-button:hover, .ui-button:focus {
+    border: none !important;
+  }
+  .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover {
+    border: none !important;
+    background: none !important;
+  }
+  .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active{
+    /* 일자 기본영역 */
+    font-size: 1.4rem;
+    border: none !important;
+    background: none !important;
+    text-align: center;
+    width: 24px;
+    height: 24px;
+    line-height: 22px;
+    padding:0;
+    margin: 0 auto;
+  }
+  .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight{
+    /* 오늘일자 */
+    border:0px;
+    background:#e7e7e7 !important;
+    color: #111 !important;
+    border-radius: 50%;
+  }
+  .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover{
+    /* 선택 일자 */
+    background: #e09f54c0 !important;
+    color: #000;
+    border-radius: 50%;
+  }
+  /* datepicker */
+/* .date-container div{
+    display: inline-block;
+} */
+/* ^ check */
+.input-wrap .input-item {
+    font-size: 1.5rem;
+    background: none;
+    color: #fff;
+    font-family: 'Hahmlet', serif;
+    font-weight: 500;
+}
+.input-wrap .input-item:focus {
+    outline: none;
+}
+.input-wrap .input-item::placeholder {
+    color: #fff;
+}
+.date-container .room {
+    margin-left: 3.125em;
+}
+.date-container .option {
+    padding-right: 2.188em;
+    box-sizing: border-box;
+}
+.date-container .option p {
+    margin-bottom: 0.6em;
+}
+.date-container .children .material-symbols-outlined {
+    font-size: 1.6rem;
+    vertical-align: -2px;
+}
+.selectBox * {
+    box-sizing: border-box;
+}
+.selectBox {
+    position: relative;
+}
+.selectBox .select-btn img{
+    width: 10px;
+}
+.selectBox .selecbox-option {
+    background: #fff;
+    color: #111;
+    margin-top: 5px;
+    padding: 10px 0;
+    display: none;
+}
+.selectBox .selecbox-option .option-btn {
+    padding: 5px 0;
+    cursor: pointer;
+}
+.selectBox .selecbox-option .option-btn:hover {
+    background: #c4c4c4;
+}
+.children .selectBox .select-btn {
+    position: relative;
+}
+.children .selectBox .select-btn .selecbox-option {
+    position: absolute;
+    width: 80px;
+    right: -24px; top: 21px;
+}
+.date-container .adult.option {
+    padding-right: 0;
+}
+.children p {
+    width: 150px;
+}
+.selectBox img.on {
+    transform: rotate(180deg);
+}
+.search:hover a{
+    color: #fff;
+    background: #333;
+    transition: ease-in-out 0.5s;
+}
+.search a{
+    display: inline-block;
+    color: #111;
+    background: #fff;
+    font-weight: 600;
+    padding: 0.938em 2.188em;
+    box-sizing: border-box;
+}
+/* top-video */
+
+#stay {
+    color: #111;
+    max-width: 1450px;
+    margin: 100px auto 215px;
+}
+.top-text {
+    position: relative;
+}
+.top-text h1 {
+    font-size: 4rem;
+    text-align: left;
+    font-weight: 600;
+    display: inline-block;
+    padding-bottom: 0.825em;
+    box-sizing: border-box;
+}
+.top-text span {
+    font-size: 1.4rem;
+    text-align: right;
+    display: inline-block;
+    position: absolute;
+    top: 1.571em; right: 0;
+}
+.top-text .viewMore:before {
+    position: absolute;
+    content: '';
+    width: 100%; height: 1px;
+    background: #111;
+    left: 0; bottom: 0;
+}
+.top-text .viewMore:after {
+    position: absolute;
+    content: '';
+    left: 0; bottom: 0;
+    width: 0; height: 1px;
+    background: #111;
+    transition: all 0.5s;
+}
+/* .top-text .viewMore:hover + .top-text .viewMore:after{
+    width: 90%;
+} */
+.top-text a:hover span:before {
+    width: 0;
+}
+.top-text a:hover span:after {
+    width: 100%;
+}
+.main-area {
+    display: flex;
+    justify-content: space-between;
+}
+.main-area div {
+    display: inline-block;
+}
+.main-area div figure {
+    max-width: 28.750em;
+    height: 20em;
+    margin-bottom: 2.188em;
+    overflow: hidden;
+}
+.main-area div figure img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s;
+}
+.main-area div figure:hover img {
+    transform: scale(1.1);
+}
+.main-area div h2 {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 0.267em;
+}
+.main-area div .sub-text {
+    font-size: 1.7rem;
+    color: #707070;
+    font-weight: 500;
+    border-bottom: 1px solid #dfdfdf;
+    margin-bottom: 1.765em;
+    padding-bottom: 1.765em;
+    box-sizing: border-box;
+}
+.main-area div span {
+    display: inline-block;
+    line-height: 2;
+}
+.main-area div .reserv-day {
+    margin-right: 40px;
+    font-weight: 600;
+}
+.main-area div .day {
+    color: #555;
+}
+/* stay */
+#swiper-area {
+    position: relative;
+    height: 100vh;
+    /* margin-bottom: 200px; */
+}
+.mainSwiper {
+    width: 1360px;
+    float: left;
+    height: 100%;
+}
+.mainSwiper .swiper-slide img{
+    height: 100vh;
+}
+:root {
+    --swiper-theme-color: #bd7100;
+}
+.all-box {
+	position: absolute;
+	display: inline-flex;
+	width: 90%;
+	height: 50px;
+	right: -1600px;
+	bottom: 10px;
+	box-sizing: border-box;
+	padding: 0 20px;
+	transform: translate(-50%, -50%);
+	z-index: 20;
+}
+.progress-box {
+	position: relative;
+	width: 170px;
+	height: 50px;
+	z-index: 11;
+}
+.autoplay-progress {
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 10;
+	width: 170px;
+	height: 3px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.autoplay-progress svg {
+	--progress: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 10;
+	width: 100%;
+	stroke-width: 4px;
+	stroke: #f5d5a4;
+	fill: none;
+	stroke-dashoffset: calc(100 * (1 - var(--progress)));
+	stroke-dasharray: 100;
+}
+.current, .total {
+    color: #bd7100;
+    font-family: 600;
+}
+.current {
+    position: absolute;
+    left: 0; bottom:20px;
+}
+.total {
+    position: absolute;
+    right: -10px; bottom: 19px;
+}
+/* swiper */
+.info-text {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    padding-top: 300px;
+    box-sizing: border-box;
+}
+.info-text h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+.info-text h1 span {
+    color: #bd8456;
+}
+.info-text .info-sub-text {
+    font-size: 1.8rem;
+    color: #444;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.info-text .room-text {
+    color: #777;
+    font-size: 1.4rem;
+    letter-spacing: -0.5;
+}
+.info-text .room-text span {
+    position: relative;
+    margin-right: 25px;
+}
+.info-text .room-text .after:after {
+    content: '';
+    position: absolute;
+    top: 8px; right: -15px;
+    width: 5px; height: 5px;
+    background: #777;
+    border-radius: 50%;
+    opacity: 0.3;
+}
+.info-text .view {
+    position: absolute;
+    bottom: 200px; right: 330px;
+    font-size: 1.4rem;
+}
+.info-text .view .viewMore:before {
+    position: absolute;
+    content: '';
+    width: 100%; height: 1px;
+    background: #111;
+    left: 0; bottom: 0;
+}
+.info-text .view .viewMore:after {
+    position: absolute;
+    content: '';
+    left: 0; bottom: 0;
+    width: 0; height: 1px;
+    background: #111;
+    transition: all 0.5s;
+}
+/* .top-text .viewMore:hover + .top-text .viewMore:after{
+    width: 90%;
+} */
+.top-text p {display: none;}
+.mobile-btn {display: none;}
+.info-text .view a:hover span:before {
+    width: 0;
+}
+.info-text .view a:hover span:after {
+    width: 100%;
+}
+/* swiper-area */
+#enjoy-area {
+    max-width: 1450px;
+    margin: 100px auto 170px;
+}
+.enjoy-text {
+    position: relative;
+    padding-top: 50px;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+}
+.enjoy-text h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-right: 50px;
+}
+.enjoy-text .enjoy-sub-text {
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #777;
+}
+.enjoy-text .enjoy-sub-text span {
+    position: relative;
+    margin-right: 30px;
+}
+.enjoy-text .enjoy-sub-text .after:after {
+    content: '';
+    position: absolute;
+    top: 8px; right: -20px;
+    width: 5px; height: 5px;
+    background: #777;
+    border-radius: 50%;
+    opacity: 0.3;
+}
+.enjoy-text .enjoy-sub-text .sub-text {display: none;}
+.bottomSwiper {
+    width: 100%;
+    height: 55vh;
+}
+.bottomSwiper .swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+.bottomSwiper .lf {
+    background: url(../img/bottom-slide-saintaugustin.jpg) no-repeat center/cover;
+}
+.bottomSwiper .collabo {
+    background: url(../img/bottom-slide-collabo.jpg) no-repeat center/cover;
+}
+.bottomSwiper .bar {
+    background: url(../img/bottom-slide-moontanbar.jpg) no-repeat center/cover;
+}
+.enjoy-text .view {
+    position: absolute;
+    top: 78px; right: 0;
+    font-size: 1.4rem;
+}
+.enjoy-text .view .viewMore:before {
+    position: absolute;
+    content: '';
+    width: 100%; height: 1px;
+    background: #111;
+    left: 0; bottom: 0;
+}
+.enjoy-text .view .viewMore:after {
+    position: absolute;
+    content: '';
+    left: 0; bottom: 0;
+    width: 0; height: 1px;
+    background: #111;
+    transition: all 0.5s;
+}
+/* .top-text .viewMore:hover + .top-text .viewMore:after{
+    width: 90%;
+} */
+.enjoy-text .view a:hover span:before {
+    width: 0;
+}
+.enjoy-text .view a:hover span:after {
+    width: 100%;
+}
+.bottomSwiper .swiper-slide a {
+    position: absolute;
+    font-size: 4rem;
+    display: block;
+    color: rgba(255, 255, 255, 0.8);
+    z-index: 100;
+    left: 30px; bottom: 30px;
+}
+/* enjoy */
+footer {
+    position: relative;
+    color: #fff;
+}
+footer:before {
+    position: absolute;
+    content: '';
+    background: rgba(235, 235, 235, 0.8);
+    width: 1468px; height: 1px;
+    left: 226px; top: 450px;
+}
+.footer-video {
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+}
+.footer-bg {
+    position: absolute;
+    width: 100%; height: 100%;
+    left: 0; top: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.3);
+    opacity: 1;
+}
+.footer-top {
+}
+.footer-top .footer-logo {
+    position: absolute;
+    top: 150px; left: 226px;
+}
+.footer-logo h2 a svg{
+    fill: #fff;
+}
+.footer-sns {
+    position: absolute;
+    top: 150px; right: 226px;
+}
+.footer-sns a span:first-child img {
+    width: 30px; height: 30px;
+}
+.footer-sns a span:last-child img {
+    width: 50px; height: 50px;
+}
+.footer-info {
+    position: absolute;
+    top: 50%; right: 226px;
+    transform: translateY(-50%);
+    color: rgba(235, 235, 235, 0.8);
+}
+.footer-info p a {
+    margin-right: 50px;
+}
+.footer-info p a:hover {
+    color: #fff;
+}
+.footer-info p a:last-child {
+    margin-right: 0;
+}
+.copy{
+    position: absolute;
+    width: 400px;
+    bottom: 10%; left: 110px;
+    font-size: 1.3rem;
+}
+.address {
+    position: absolute;
+    right: 226px; bottom: 10%;
+    font-size: 1.3rem;
+}
+
+/* 아래부터 반응형 추가된 메뉴 */
+#reactive-menu {
+    display: none;
+}

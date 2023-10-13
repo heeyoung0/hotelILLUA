@@ -1,0 +1,68 @@
+@charset "utf-8";
+@import url('font.css');
+html {font-size: 0.625rem; }
+body {font: 1.6rem 'Hahmlet', serif; scroll-behavior:smooth; max-width: 540px;}
+
+@media screen and (max-width: 540px) {
+    .main-area {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .main-area > div {
+        max-width: 33.750em;
+    }
+    .main-area > div a {
+        display: flex;
+        border-bottom: 1px solid #dfdfdf;
+        padding-top: 15px;
+    }
+    .main-area .happy-day a {
+        border-bottom: none;
+    }
+    .main-area-text {
+        margin-left: 60px;
+    }
+    .main-area div .sub-text {
+        padding-bottom: 5px;
+    }
+    .main-area > div .reserv-area {
+        padding-top: 5px;
+    }
+    .main-area div span {
+        line-height: 1.5;
+    }
+    .main-area div figure {
+        width: 200px;
+    }
+    .main-area div figure img {
+        width: 100%;
+    }
+    .main-area .happy-day .sub-text {
+        width: 160px;
+    }
+    .mainSwiper {
+        max-width: 540px;
+    }
+    .swiper-button-next {
+        right: 0.625em;
+    }
+    footer:before {
+        top: 60%;
+    }
+    .footer-video {
+        height: 19.063em;
+    }
+    .footer-info {
+        top: 47%;
+    }
+    .footer-info p {
+        width: 420px;
+    }
+    .footer-info p a {
+        margin-right: 5px;
+        font-size: 16px;
+    }
+    .address {
+        bottom: 25%;
+    }
+}

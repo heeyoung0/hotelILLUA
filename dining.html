@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROOMS | 호텔 일루아</title>
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/dining.css">
+    <link rel="stylesheet" href="footer.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <nav class="menu">
+                <div class="logo">
+                    <h2>
+                        <a href="#" class="logoArea" onclick="location.href='index.html'">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="124.5px" height="52.1px" viewBox="0 0 124.5 52.1">
+                            <title>HOTEL ILLUA</title>
+                            <path d="M0,24h3.9v27.8H0V24z"></path>
+                            <path d="M19.3,24V47v1.2h1.2h13.4v3.7H15.5V24H19.3z"></path>
+                            <path d="M44,24V47v1.2h1.2h13.4v3.7H40.2V24H44z"></path>
+                            <path d="M89.7,24v11c0,4.7,0.7,10.7-3.6,13.9v0c-7,6.6-21.3,2.5-21.2-7.8c0-3.8,0-13.2,0-17.1h4.2v11c-0.6,6.2,0.3,13.3,8.2,13.3c7.8,0,8.8-7.1,8.2-13.3c0,0,0-11,0-11H89.7z"></path>
+                            <path d="M124.5,51.8h-4.8l-2.5-4.5c-3.5,0-10.6,0-14.1,0l-2.5,4.5H96L110.2,24L124.5,51.8z M110.2,44.3h5.4   c-1.8-3.4-3.6-7.7-5.4-11.2c-1.8,3.4-3.7,7.8-5.4,11.2H110.2z"></path>
+                            <path d="M21.2,0.5h1.2v5.2h6.3V0.5H30V13h-1.2v-6h-6.3v6h-1.2V0.5z"></path>
+                            <path d="M45.4,0c1.9,0,3.5,0.6,4.7,1.9C51.4,3.1,52,4.7,52,6.5c0,1.8-0.6,3.4-1.9,4.6c-1.3,1.3-2.8,1.9-4.6,1.9c-1.8,0-3.4-0.6-4.7-1.9c-1.3-1.3-1.9-2.8-1.9-4.6c0-1.2,0.3-2.3,0.9-3.3c0.6-1,1.4-1.8,2.4-2.4C43.1,0.3,44.2,0,45.4,0zM45.4,1.2c-0.9,0-1.8,0.2-2.6,0.7c-0.8,0.5-1.5,1.1-1.9,1.9c-0.5,0.8-0.7,1.7-0.7,2.7c0,1.5,0.5,2.7,1.5,3.7c1,1,2.3,1.5,3.7,1.5c1,0,1.9-0.2,2.7-0.7c0.8-0.5,1.5-1.1,1.9-1.9c0.5-0.8,0.7-1.7,0.7-2.7c0-1-0.2-1.9-0.7-2.7c-0.5-0.8-1.1-1.4-1.9-1.9C47.3,1.5,46.4,1.2,45.4,1.2z"></path>
+                            <path d="M61,1.5V0.3h6.8v1.2H65v11.2h-1.2V1.5H61z"></path>
+                            <path d="M76.7,0.3h7.1v1.2H78v3.9h5.9v1.2H78v4.9h5.9v1.2h-7.1V0.3z"></path>
+                            <path d="M92.9,0.3h1.2v11.2h5.6v1.2h-6.8V0.3z"></path>
+                            </svg>
+                        </a>
+                    </h2>
+                </div>
+                <div class="menu-container">
+                    <ul class="header-menu">
+                        <li class="depth1">
+                            <a href="#" class="mainMenu rooms" onclick="location.href='rooms.html'">ROOMS</a>
+                            <div class="depth2">
+                                <ul class="hide-menu hide1">
+                                    <li>
+                                        <a href="standard.html" class="rooms-standard">STANDARD</a>
+                                        <ul class="hide-menu-depth">
+                                            <li>
+                                                <a href="javascript:;">STANDARD TWIN</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">STANDARD ONDOL</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="deluxe.html" class="rooms-deluxe">DELUXE</a>
+                                        <ul class="hide-menu-depth">
+                                            <li>
+                                                <a href="javascript:;">DELUXE DOUBLE</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">DELUXE TWIN</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">DELUXE DOUBLE TERRACE</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">SUPER DELUXE TWIN</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">DELUXE FAMILY TWIN</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">DELUXE ONDOL TERRACE</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="spa.html" class="rooms-spa">SPA</a>
+                                        <ul class="hide-menu-depth">
+                                            <li>
+                                                <a href="javascript:;">SPA SUPERIOR</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">SPA DELUXE TERRACE</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">SPA SUITE TERRACE</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="suite.html" class="rooms-suite">SUITE</a>
+                                        <ul class="hide-menu-depth">
+                                            <li>
+                                                <a href="javascript:;">ROYAL SUITE</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- depth1 -->
+                        <li class="depth1">
+                            <a href="#" class="mainMenu offers" onclick="location.href='offers.html'">OFFERS</a>
+                            <div class="depth2">
+                                <ul class="hide-menu hide2">
+                                    <li>
+                                        <a href="offers.html" class="offers-package">PACKAGE</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;"class="offers-event">EVENTS</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- depth1 -->
+                        <li class="depth1">
+                            <a href="#" class="mainMenu dining" onclick="location.href='dining.html'">DINING</a>
+                            <div class="depth2">
+                                <ul class="hide-menu hide3">
+                                    <li>
+                                        <a href="javascript:;">SAINT AUGUSTIN</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">COLLABO</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">MOONTAN BAR</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">GAWON</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- depth1 -->
+                        <li class="depth1">
+                            <a href="#" class="mainMenu facilities" onclick="location.href='facilities.html'">FACILITIES</a>
+                            <div class="depth2">
+                                <ul class="hide-menu hide4">
+                                    <li>
+                                        <a href="javascript:;">MEETING & BANQUET</a>
+                                        <ul class="hide-menu-depth">
+                                            <li>
+                                                <a href="javascript:;">HARMONIE ROOM</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">LE CIEL ROOM</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">LA MER ROOM</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">WEDDING</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">SERVICE</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">FLOWER SHOP</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- depth1 -->
+                        <li class="depth1">
+                            <a href="#" class="mainMenu about" onclick="location.href='about.html'">ABOUT</a>
+                            <div class="depth2">
+                                <ul class="hide-menu hide5">
+                                    <li>
+                                        <a href="javascript:;">ABOUT ILLUA</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">NOTICE</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">CONTACT</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- header-menu -->
+                </div>
+                <!-- menu-container -->
+                <div class="header-right">
+                    <a href="#" class="lang">
+                            <span class="lang-text">EN</span>
+                            <span class="material-symbols-outlined">language</span>
+                    </a>
+                    <div class="reserv">
+                        <a href="#">RESERVATION</a>
+                    </div>
+                </div>
+                <!-- header-right -->
+            </nav>
+            <!-- menu -->
+            <div class="gnb_bg"></div>
+        </header>
+        <!-- header -->
+        <section id="dining clear">
+            <div class="dining-title">
+                <h1>DINING</h1>
+                <p>해운대 바다와 아름다운 자연경관 속에서 직접 선보이는 다양한 요리를 즐기실 수 있습니다.</p>
+            </div>
+            <div class="dining-tap-menu">
+                <div class="dining-img">
+                    <div class="swiper-text">
+                        <a href="#">
+                            <div class="swiper mainSwiper all1">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide">
+                                    <img src="img/dining-thai1.jpg" alt="생어거스틴1">
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <img src="img/dining-thai2.jpg" alt="생어거스틴2">
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <img src="img/dining-thai3.jpg" alt="생어거스틴3">
+                                  </div>
+                                </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                            </div>
+                        </a>
+                        <div class="top-text">
+                            <p class="top-en">THAI RESTAURANT<span>LF</span></p>
+                            <h2>생어거스틴</h2>
+                            <a href="#">VIEW MORE</a>
+                        </div>
+                    </div>
+                    <!-- 생어거스틴 -->
+                    <div class="swiper-text">
+                        <a href="#">
+                            <div class="swiper mainSwiper all1">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide">
+                                    <img src="img/dining-bakery1.jpg" alt="콜라보1">
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <img src="img/dining-bakery2.jpg" alt="콜라보2">
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <img src="img/dining-bakery3.jpg" alt="콜라보3">
+                                  </div>
+                                </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                            </div>
+                        </a>
+                        <div class="top-text">
+                            <p class="top-en">BRUNCH CAFE & BAKERY<span>2F</span></p>
+                            <h2>콜라보</h2>
+                            <a href="#">VIEW MORE</a>
+                        </div>
+                    </div>
+                    <!-- 콜라보 -->
+                    <div class="swiper-text">
+                        <a href="#">
+                            <div class="swiper mainSwiper all1">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide">
+                                    <img src="img/dining-bar1.jpg" alt="문탠바1">
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <img src="img/dining-bar2.jpg" alt="문탠바2">
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <img src="img/dining-bar3.jpg" alt="문탠바3">
+                                  </div>
+                                </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                            </div>
+                        </a>
+                        <div class="top-text">
+                            <p class="top-en">BAR<span>2F</span></p>
+                            <h2>문탠바</h2>
+                            <a href="#">VIEW MORE</a>
+                        </div>
+                    </div>
+                    <!-- 문탠바 -->
+                    <div class="swiper-text">
+                        <a href="#">
+                            <div class="swiper mainSwiper all1">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide">
+                                    <img src="img/dining-kawon1.jpg" alt="가원1">
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <img src="img/dining-kawon2.jpg" alt="가원2">
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <img src="img/dining-kawon3.jpg" alt="가원3">
+                                  </div>
+                                </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                            </div>
+                        </a>
+                        <div class="top-text">
+                            <p class="top-en">RESTAURANT<span>1F</span></p>
+                            <h2>가원</h2>
+                            <a href="#">VIEW MORE</a>
+                        </div>
+                    </div>
+                    <!-- 가원 -->
+                </div><!-- rooms-img -->
+            </div>
+        </section>
+        <!-- rooms -->
+        <footer>
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <h2>
+                        <a href="#" class="logoArea">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="124.5px" height="52.1px" viewBox="0 0 124.5 52.1">
+                            <title>HOTEL ILLUA</title>
+                            <path d="M0,24h3.9v27.8H0V24z"></path>
+                            <path d="M19.3,24V47v1.2h1.2h13.4v3.7H15.5V24H19.3z"></path>
+                            <path d="M44,24V47v1.2h1.2h13.4v3.7H40.2V24H44z"></path>
+                            <path d="M89.7,24v11c0,4.7,0.7,10.7-3.6,13.9v0c-7,6.6-21.3,2.5-21.2-7.8c0-3.8,0-13.2,0-17.1h4.2v11c-0.6,6.2,0.3,13.3,8.2,13.3c7.8,0,8.8-7.1,8.2-13.3c0,0,0-11,0-11H89.7z"></path>
+                            <path d="M124.5,51.8h-4.8l-2.5-4.5c-3.5,0-10.6,0-14.1,0l-2.5,4.5H96L110.2,24L124.5,51.8z M110.2,44.3h5.4   c-1.8-3.4-3.6-7.7-5.4-11.2c-1.8,3.4-3.7,7.8-5.4,11.2H110.2z"></path>
+                            <path d="M21.2,0.5h1.2v5.2h6.3V0.5H30V13h-1.2v-6h-6.3v6h-1.2V0.5z"></path>
+                            <path d="M45.4,0c1.9,0,3.5,0.6,4.7,1.9C51.4,3.1,52,4.7,52,6.5c0,1.8-0.6,3.4-1.9,4.6c-1.3,1.3-2.8,1.9-4.6,1.9c-1.8,0-3.4-0.6-4.7-1.9c-1.3-1.3-1.9-2.8-1.9-4.6c0-1.2,0.3-2.3,0.9-3.3c0.6-1,1.4-1.8,2.4-2.4C43.1,0.3,44.2,0,45.4,0zM45.4,1.2c-0.9,0-1.8,0.2-2.6,0.7c-0.8,0.5-1.5,1.1-1.9,1.9c-0.5,0.8-0.7,1.7-0.7,2.7c0,1.5,0.5,2.7,1.5,3.7c1,1,2.3,1.5,3.7,1.5c1,0,1.9-0.2,2.7-0.7c0.8-0.5,1.5-1.1,1.9-1.9c0.5-0.8,0.7-1.7,0.7-2.7c0-1-0.2-1.9-0.7-2.7c-0.5-0.8-1.1-1.4-1.9-1.9C47.3,1.5,46.4,1.2,45.4,1.2z"></path>
+                            <path d="M61,1.5V0.3h6.8v1.2H65v11.2h-1.2V1.5H61z"></path>
+                            <path d="M76.7,0.3h7.1v1.2H78v3.9h5.9v1.2H78v4.9h5.9v1.2h-7.1V0.3z"></path>
+                            <path d="M92.9,0.3h1.2v11.2h5.6v1.2h-6.8V0.3z"></path>
+                            </svg>
+                        </a>
+                    </h2>
+                </div> <!-- footer-logo -->
+                <div class="footer-sns">
+                    <a href="#">
+                        <span><img src="img/insta-white.png" alt=""></span>
+                        <span><img src="img/naver-blog.png" alt=""></span>
+                    </a>
+                </div>
+                <div class="footer-info">
+                    <p>
+                        <a href="#">호텔 소개</a>
+                        <a href="#">오시는 길</a>
+                        <a href="#">개인정보처리방침</a>
+                        <a href="#">이메일무단수집금지</a>
+                        <a href="#">영상정보처리기기 운영, 관리방침</a>
+                    </p>
+                </div>
+            </div>
+            <!-- footer-top -->
+                <div class="copy"><span class="copy">&copy; 2021 HOTEL ILLUA Co. ALL RIGHTS RESERVED.</span></div>
+                <div class="address">
+                    <p>
+                        <span>부산광역시 해운대구 달맞이길 97</span>
+                        <span>대표이사 허주희</span>
+                        <span>사업자등록번호 618-81-07176</span>
+                        <span>TEL. 051-744-1331</span>
+                        <span>FAX. 051-744-1858</span>
+                    </p>
+                </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/header.js"></script>
+
+    <script>
+        var swiper = new Swiper(".all1", {
+          //spaceBetween: 30,
+          centeredSlides: true,
+          /* autoplay: {
+            delay: 2500,
+          }, */
+          loop : true, 
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+        new Swiper('.all2', {
+            /* autoplay: {
+            delay: 2500,
+          }, */
+            loop : true, 
+            pagination : {
+                el : '.swiper-pagination',
+                clickable: true,
+                },
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+</body>
+</html>
